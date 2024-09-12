@@ -3,6 +3,12 @@
 
 A viewer to demonstrate the basic functionalities of the [rmagine](https://github.com/uos/rmagine) library. Currently, only the Embree backend of rmagine is supported. Make sure Embree is installed properly. 
 
+## Requirements
+
+- Embree (>= v4.0.0)
+- jsoncpp
+- cmake >= 3.11
+
 ## Building
 
 ```console
