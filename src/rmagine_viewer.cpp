@@ -152,7 +152,7 @@ int main(int argc, char** argv)
   polyscope::options::groundPlaneEnabled = false;
   polyscope::options::groundPlaneHeight = 0.;
   // a few options
-  polyscope::options::programName = "Rmagine Polyscope Viewer";
+  polyscope::options::programName = "Rmagine Viewer";
   polyscope::options::verbosity = 0;
   polyscope::options::usePrefsFile = false;
   
