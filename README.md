@@ -576,11 +576,13 @@ After building, run the rmagine_viewer by entering
 ./rmagine_viewer
 ```
 
-after
+![image loading...](./dat/rmagine_viewer_small.png "Rmagine Viewer")
 
+You can navigate around and switch the type of the sensor to Spherical, Pinhole, O1Dn or OnDn and change the parameters. O1Dn supports loading an Ouster's meta yaml file.
 
-## Rmagine and Find
+## Rmagine and FetchContent_Declare
 
+This repository also shows a very easy way to integrate rmagine into your projects utilizing CMake's FetchContent funcionality. Read the [CMakeLists.txt](./CMakeLists.txt) for more information. 
 
 ## Acknowledgements
 
