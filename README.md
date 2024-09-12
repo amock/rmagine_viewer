@@ -588,7 +588,7 @@ You can navigate around and switch the type of the sensor to Spherical, Pinhole,
 
 ## Rmagine and FetchContent_Declare
 
-This repository also shows a very easy way to integrate rmagine into your projects utilizing CMake's FetchContent funcionality. Read the [CMakeLists.txt](./CMakeLists.txt) for more information. 
+This repository also shows a very easy way to integrate rmagine into your projects utilizing CMake's FetchContent functionality. Read the [CMakeLists.txt](./CMakeLists.txt) for more information. 
 
 ## Acknowledgements
 
