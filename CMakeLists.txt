@@ -25,7 +25,7 @@ FetchContent_Declare(
 FetchContent_Declare(
   rmagine
   GIT_REPOSITORY https://github.com/uos/rmagine.git
-  GIT_TAG        develop
+  GIT_TAG        v2.2.6
   GIT_PROGRESS   TRUE
 )
 
