@@ -11,14 +11,14 @@ set(FETCHCONTENT_QUIET FALSE)
 FetchContent_Declare(
   polyscope
   GIT_REPOSITORY https://github.com/nmwsharp/polyscope.git
-  GIT_TAG        master # release-1.10.0
+  GIT_TAG        v2.3.0
   GIT_PROGRESS   TRUE
 )
 
 FetchContent_Declare(
   portable_file_dialogs
   GIT_REPOSITORY https://github.com/samhocevar/portable-file-dialogs.git
-  GIT_TAG        main # release-1.10.0
+  GIT_TAG        0.1.0
   GIT_PROGRESS   TRUE
 )
 
