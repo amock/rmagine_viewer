@@ -11,7 +11,7 @@ set(FETCHCONTENT_QUIET FALSE)
 FetchContent_Declare(
   polyscope
   GIT_REPOSITORY https://github.com/nmwsharp/polyscope.git
-  GIT_TAG        v2.3.0
+  GIT_TAG        v2.4.0
   GIT_PROGRESS   TRUE
 )
 
@@ -25,7 +25,7 @@ FetchContent_Declare(
 FetchContent_Declare(
   rmagine
   GIT_REPOSITORY https://github.com/uos/rmagine.git
-  GIT_TAG        v2.2.7
+  GIT_TAG        v2.3.0
   GIT_PROGRESS   TRUE
 )
 
