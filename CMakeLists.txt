@@ -11,7 +11,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage(
     NAME rmagine
     GITHUB_REPOSITORY uos/rmagine
-    GIT_TAG v2.3.0
+    VERSION 2.3.0
     OPTIONS
         "BUILD_TESTS OFF"
         "BUILD_TOOLS OFF"
@@ -20,7 +20,7 @@ CPMAddPackage(
 CPMAddPackage(
     NAME polyscope 
     GITHUB_REPOSITORY nmwsharp/polyscope
-    GIT_TAG v2.4.0
+    VERSION 2.4.0
     OPTIONS
         "POLYSCOPE_BACKEND_OPENGL3_GLFW ON"
         "POLYSCOPE_BACKEND_OPENGL3_EGL OFF"
