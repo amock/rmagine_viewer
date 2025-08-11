@@ -4,32 +4,35 @@ project(rmagine_viewer)
 add_compile_options(-std=c++17)
 set(CMAKE_CXX_STANDARD 17)
 
-include(FetchContent)
+set(CPM_USE_LOCAL_PACKAGES TRUE)
 
-set(FETCHCONTENT_QUIET FALSE)
+include(cmake/CPM.cmake)
 
-FetchContent_Declare(
-  polyscope
-  GIT_REPOSITORY https://github.com/nmwsharp/polyscope.git
-  GIT_TAG        v2.4.0
-  GIT_PROGRESS   TRUE
+CPMAddPackage(
+    NAME rmagine
+    GITHUB_REPOSITORY uos/rmagine
+    GIT_TAG v2.3.0
+    OPTIONS
+        "BUILD_TESTS OFF"
+        "BUILD_TOOLS OFF"
 )
 
-FetchContent_Declare(
-  portable_file_dialogs
-  GIT_REPOSITORY https://github.com/samhocevar/portable-file-dialogs.git
-  GIT_TAG        0.1.0
-  GIT_PROGRESS   TRUE
+CPMAddPackage(
+    NAME polyscope 
+    GITHUB_REPOSITORY nmwsharp/polyscope
+    GIT_TAG v2.4.0
+    OPTIONS
+        "POLYSCOPE_BACKEND_OPENGL3_GLFW ON"
+        "POLYSCOPE_BACKEND_OPENGL3_EGL OFF"
+        "POLYSCOPE_BACKEND_OPENGL_MOCK OFF"
+        "BUILD_TESTING OFF"
 )
 
-FetchContent_Declare(
-  rmagine
-  GIT_REPOSITORY https://github.com/uos/rmagine.git
-  GIT_TAG        v2.3.0
-  GIT_PROGRESS   TRUE
+CPMAddPackage(
+    NAME portable-file-dialogs
+    GITHUB_REPOSITORY samhocevar/portable-file-dialogs
+    GIT_TAG 0.1.0
 )
-
-FetchContent_MakeAvailable(rmagine polyscope portable_file_dialogs)
 
 add_executable(rmagine_viewer src/rmagine_viewer.cpp)
 target_link_libraries(rmagine_viewer
